@@ -1,0 +1,26 @@
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.post {
+  height: 200px;
+  background: linear-gradient(45deg, #ff0050, #00f2ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+body.light-mode .post {
+  background: linear-gradient(45deg, #ff7a7a, #6ee7f9);
+}
